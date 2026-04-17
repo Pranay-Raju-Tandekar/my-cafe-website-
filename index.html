@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place Bakehouse & Coffee — Nagpur</title>
+  <meta name="description" content="Experience handcrafted coffee and artisanal delights in a cozy, modern space. Top-rated cafe in Nagpur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Place <span>Bakehouse</span></a>
+      <ul class="nav__links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--outline nav__cta">Visit Us</a>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1800&q=80" alt="Coffee hero" class="hero__img" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content animate-fade-up">
+      <p class="hero__eyebrow">Nagpur's Finest</p>
+      <h1 class="hero__headline">Freshly Baked.<br />Perfectly Brewed.</h1>
+      <p class="hero__sub">Experience handcrafted coffee and artisanal delights<br class="br-hide" /> in a cozy, modern space.</p>
+      <div class="hero__actions">
+        <a href="#menu" class="btn btn--gold">Explore Menu</a>
+        <a href="#about" class="btn btn--ghost">Our Story</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust reveal">
+    <div class="container trust__grid">
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div>
+          <strong>500+</strong>
+          <span>Happy Customers</span>
+        </div>
+      </div>
+      <div class="trust__divider"></div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <div>
+          <strong>Top Rated</strong>
+          <span>Cafe in Nagpur</span>
+        </div>
+      </div>
+      <div class="trust__divider"></div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <div>
+          <strong>Daily Fresh</strong>
+          <span>Baked Every Morning</span>
+        </div>
+      </div>
+      <div class="trust__divider"></div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <strong>Open Daily</strong>
+          <span>8 AM – 10 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu section" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Our Offerings</p>
+        <h2>Crafted With Passion</h2>
+        <p class="section-sub">Every item on our menu is made with the finest ingredients, prepared fresh each day.</p>
+      </div>
+
+      <div class="menu__tabs reveal">
+        <button class="tab active" data-cat="coffee">Coffee</button>
+        <button class="tab" data-cat="bakery">Bakery</button>
+        <button class="tab" data-cat="desserts">Desserts</button>
+        <button class="tab" data-cat="snacks">Snacks</button>
+      </div>
+
+      <div class="menu__grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__img-wrap reveal reveal--left">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80" alt="Cafe interior" />
+        <div class="about__badge">
+          <span>Est.</span>
+          <strong>2020</strong>
+        </div>
+      </div>
+      <div class="about__text reveal reveal--right">
+        <p class="eyebrow">Our Story</p>
+        <h2>More Than a Cafe.<br />A Feeling.</h2>
+        <p class="about__quote">"At Place Bakehouse & Coffee, every cup and every bite is crafted to create moments of comfort and connection."</p>
+        <p>Born from a love of great coffee and honest food, we set out to build a space where Nagpur could slow down, breathe, and savour something truly special. From our hand-selected single-origin beans to our oven-fresh pastries, every detail is intentional.</p>
+        <a href="#contact" class="btn btn--gold" style="margin-top:2rem;">Come Say Hello</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Why Us</p>
+        <h2>The Place Difference</h2>
+      </div>
+      <div class="why__grid">
+        <div class="why__card reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Freshly Baked Daily</h3>
+          <p>Our kitchen starts before sunrise so your morning begins with something warm and wonderful.</p>
+        </div>
+        <div class="why__card reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Premium Coffee Beans</h3>
+          <p>Single-origin, ethically sourced beans roasted to perfection — every cup tells a story.</p>
+        </div>
+        <div class="why__card reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Cozy Ambience</h3>
+          <p>Warm lighting, curated music, and thoughtful interiors designed to make you feel at home.</p>
+        </div>
+        <div class="why__card reveal">
+          <div class="why__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Work & Meetings</h3>
+          <p>High-speed Wi-Fi, quiet corners, and great coffee — the perfect backdrop for your best ideas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>A Feast for the Eyes</h2>
+      </div>
+      <div class="gallery__grid reveal">
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80" alt="Coffee art" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery__item gallery__item--tall" data-src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Croissant" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=600&q=80" alt="Cafe interior" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery__item gallery__item--wide" data-src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80" alt="Desserts" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=600&q=80" alt="Latte" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+        <div class="gallery__item" data-src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=900&q=80">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&q=80" alt="Sandwich" loading="lazy" />
+          <div class="gallery__hover"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lbClose">&#x2715;</button>
+    <img src="" alt="Gallery preview" id="lbImg" />
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Testimonials</p>
+        <h2>What Our Guests Say</h2>
+      </div>
+      <div class="testi__track reveal">
+        <div class="testi__slider" id="testiSlider">
+          <div class="testi__card">
+            <div class="testi__stars">★★★★★</div>
+            <p>"An experience beyond coffee. The ambience, the aroma, the taste — everything is just perfect. My go-to spot in Nagpur."</p>
+            <div class="testi__author">
+              <div class="testi__avatar">R</div>
+              <div><strong>Riya Sharma</strong><span>Regular Customer</span></div>
+            </div>
+          </div>
+          <div class="testi__card">
+            <div class="testi__stars">★★★★★</div>
+            <p>"Best cafe vibe in Nagpur. The croissants are absolutely divine and the cold brew is something else entirely."</p>
+            <div class="testi__author">
+              <div class="testi__avatar">A</div>
+              <div><strong>Arjun Mehta</strong><span>Food Blogger</span></div>
+            </div>
+          </div>
+          <div class="testi__card">
+            <div class="testi__stars">★★★★★</div>
+            <p>"I work from here every weekend. The Wi-Fi is fast, the coffee is incredible, and the staff is always warm and welcoming."</p>
+            <div class="testi__author">
+              <div class="testi__avatar">P</div>
+              <div><strong>Priya Desai</strong><span>Freelance Designer</span></div>
+            </div>
+          </div>
+          <div class="testi__card">
+            <div class="testi__stars">★★★★★</div>
+            <p>"Took my clients here for a meeting and they were blown away. Place Bakehouse is a hidden gem that deserves all the love."</p>
+            <div class="testi__author">
+              <div class="testi__avatar">K</div>
+              <div><strong>Karan Joshi</strong><span>Entrepreneur</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi__dots" id="testiDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-banner__bg">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1800&q=80" alt="Cafe CTA" />
+      <div class="cta-banner__overlay"></div>
+    </div>
+    <div class="container cta-banner__content">
+      <p class="eyebrow" style="color:#C8A27C;">Come Visit</p>
+      <h2>Visit Us Today &amp;<br />Experience the Difference</h2>
+      <p>Walk in, sit down, and let us take care of the rest.</p>
+      <div class="hero__actions" style="margin-top:2.5rem;">
+        <a href="https://maps.google.com/?q=Place+Bakehouse+Coffee+Nagpur" target="_blank" class="btn btn--gold">Get Directions</a>
+        <a href="#contact" class="btn btn--ghost">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__info reveal reveal--left">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>We'd Love to<br />Hear From You</h2>
+        <div class="contact__details">
+          <div class="contact__detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><strong>Address</strong><span>Dharampeth, Nagpur, Maharashtra 440010</span></div>
+          </div>
+          <div class="contact__detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><strong>Phone</strong><span>+91 98765 43210</span></div>
+          </div>
+          <div class="contact__detail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div><strong>Hours</strong><span>Monday – Sunday: 8:00 AM – 10:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact__form-wrap reveal reveal--right">
+        <form class="contact__form" id="contactForm">
+          <div class="form__group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Riya Sharma" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="riya@example.com" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us something..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Send Message</button>
+          <p class="form__success" id="formSuccess">Thank you! We'll be in touch soon.</p>
+        </form>
+      </div>
+    </div>
+    <div class="contact__map reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.5!2d79.0882!3d21.1458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA4JzQ0LjkiTiA3OcKwMDUnMTcuNSJF!5e0!3m2!1sen!2sin!4v1"
+        width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Place Bakehouse location">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo">Place <span>Bakehouse</span></a>
+        <p>Freshly baked. Perfectly brewed.<br />Nagpur's favourite cafe.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__social-wrap">
+        <h4>Follow Us</h4>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Place Bakehouse &amp; Coffee, Nagpur. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
